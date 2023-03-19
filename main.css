@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;1,700&display=swap');
+
+:root {
+  --primary-blue: hsl(223, 87%, 63%);
+  --secondary-blue: hsl(223, 100%, 88%);
+  --seconsary-red: hsl(354, 100%, 66%);
+  --neutral-gray: hsl(0, 0%, 59%);
+  --neutra-blue: hsl(209, 33%, 12%);
+}
+
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.25rem;
+  font-family: 'Libre Franklin', sans-serif;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+main {
+  width: min(1440px, 100%);
+  aspect-ratio: 16/9;
+  margin: auto;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--neutral-gray);
+}
+form {
+  width: min(600px, 100%);
+  margin: auto;
+}
+input {
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--secondary-blue);
+  color: var(--primary-blue);
+}
+::placeholder {
+  padding-left: 1rem;
+  color: var(--secondary-blue);
+  font-size: 0.8em;
+}
+
+button {
+  border: none;
+  background-color: var(--primary-blue);
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 1.2em 4em;
+  border-radius: 2em;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px hsla(223, 87%, 63%, 0.45);
+}
+button:hover {
+  background-color: hsla(223, 87%, 63%, 0.8);
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+.heading span {
+  color: var(--neutra-blue);
+  font-weight: 700;
+}
+.heading img {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.heading p {
+  color: var(--neutra-blue);
+  font-size: 1.3rem;
+  margin-bottom: 2em;
+}
+.error-message {
+  text-align: left;
+  padding-left: 1.2rem;
+  font-size: 0.9rem !important;
+  color: var(--seconsary-red) !important;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.image img {
+  width: min(600px, 100%);
+  height: auto;
+  margin: auto;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icon span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 0.5px solid hsla(0, 0%, 59%, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-icon span:hover {
+  background-color: var(--primary-blue);
+}
+.social-icon span:hover i {
+  color: #fff;
+}
+
+.social-icon i {
+  color: var(--primary-blue);
+}
+
+.image p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--neutral-gray);
+  font-weight: 300;
+}
+
+.error {
+  opacity: 1;
+}
+
+.red-border {
+  border: 1px solid var(--seconsary-red);
+}
+
+@media (max-width: 556px) {
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  input {
+    width: 100%;
+  }
+  footer {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .heading {
+    padding: 5rem 2rem;
+    padding-bottom: 3rem;
+  }
+  .heading p {
+    font-size: 1rem;
+  }
+  .error-message {
+    /* opacity: 1; */
+    font-size: 0.8rem;
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    top: 50px;
+  }
+  .image {
+    padding: 0 1rem;
+  }
+  .social-icon {
+    margin-top: 5rem;
+  }
+}
+@media (hover: none) {
+}
