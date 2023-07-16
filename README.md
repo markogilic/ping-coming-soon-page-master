@@ -1,5 +1,5 @@
-# Frontend Mentor - Interactive Credit Card Details Input Form 
-This is a solution to the [Interactive Credit Card Details Input Form](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw) challenge on Frontend Mentor. 
+# Frontend Mentor - Ping Comming Soon Page
+This is a solution to the [Ping Comming Soon Page](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da) challenge on Frontend Mentor. 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Overview
@@ -9,7 +9,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Logic for form validation
+- Basic form validation
 
 ### Built with
 - Semantic HTML5 markup
